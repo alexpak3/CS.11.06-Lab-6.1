@@ -29,8 +29,7 @@ public class AdventureTime {
      */
     public static int challengeOne(String fileName) throws IOException {
         int increase = 0;
-        File readingFile = new File ("inputOneTwo.txt");
-        Scanner readscan = new Scanner("inputOneTwo.txt");
+
         int[] myArray = readFile("inputOneTwo.txt");
         for (int i = 0; i < myArray.length -1; i++) {
             if (myArray[i] < myArray[i+1]){
@@ -53,8 +52,7 @@ public class AdventureTime {
      */
     public static int challengeTwo(String fileName) throws FileNotFoundException {
         int increase = 0;
-        File readingFile = new File ("inputOneTwo.txt");
-        Scanner readscan = new Scanner("inputOneTwo.txt");
+
         int[] myArray = readFile("inputOneTwo.txt");
         for (int i = 0; i < myArray.length -3; i++) {
             int sumFirst = myArray[i] + myArray[i+1] + myArray[i+2];
@@ -80,8 +78,7 @@ public class AdventureTime {
      */
     public static int challengeThree(String fileName) throws FileNotFoundException {
         int result = 0;
-        File readingFile = new File ("inputThreeFour.txt");
-        Scanner readscan = new Scanner("inputThreeFour.txt");
+
         String[] myArray = readFileString("inputThreeFour.txt");
         int forward = 0;
         int depth = 0;
